@@ -1,20 +1,21 @@
-# inclure  < stdio.h >
+#include <stdio.h>
 
-/* *
+/**
  *
- * * principal - Point d'entrée
+ *  * main - Entry point
  *
- * *
+ *   * Description: prints "\"Programming is like building a multilingual puzzle"
  *
- * * Retour : Toujours 0 (Succès)
+ *    * Return: 0
  *
- *  */
+ *     */
 
-int  principal ( vide )
+int main(void)
 
 {
 
-		puts ( " \" Programmer, c'est comme construire un puzzle multilingue " );
+		puts("\"Programming is like building a multilingual puzzle");
 
-			retour ( 0 );
+			return (0);
+
 }
