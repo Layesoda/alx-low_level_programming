@@ -1,9 +1,4 @@
 #include <main.h>
-/**
- *main-main block
- *Description: A program that prints _putchar
- *Return: 0 Success
- */
 
 int main(void)
 
