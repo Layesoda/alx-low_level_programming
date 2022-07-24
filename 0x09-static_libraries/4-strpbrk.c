@@ -1,26 +1,30 @@
-#include <stdio.h>
-
 #include "main.h"
-
-
 
 /**
 
- * _strpbrk - Entry point
+ * _strpbrk - Searches a string for any of a set of bytes
 
- * @s: input
+ *
 
- * @accept: input
+ * @s: Character to check
 
- * Return: Always 0 (Success)
+ *
+
+ * @accept: Character to look for
+
+ *
+
+ * Return: Character
 
  */
+
+
 
 char *_strpbrk(char *s, char *accept)
   
 {
   
-  int i, n;
+  int i, k;
   
 
   
@@ -28,11 +32,11 @@ char *_strpbrk(char *s, char *accept)
     
     {
       
-      for (n = 0; accept[n] != '\0'; n++)
+      for (k = 0; accept[k] != '\0'; k++)
 	
 	{
 	  
-	  if (s[i] == accept[n])
+	  if (s[i] == accept[k])
 	    
 	    return (s + i);
 	  
@@ -40,8 +44,6 @@ char *_strpbrk(char *s, char *accept)
       
     }
   
-
-  
-  return (NULL);
+  return (0);
   
 }

@@ -4,49 +4,61 @@
 
 /**
 
- * _strncat - appends src to the dest string
-
- * @dest: string to append by src
-
- * @src: string to append to dest
-
- * @n: largest number of bytes to append
+ * _strncat - Concatenates two strings using @ bytes
 
  *
 
- * Return: address of dest
+ * @dest: Destination String; src string is appended to it
+
+ *
+
+ * @src: Source string; gets appended to dest string
+
+ *
+
+ * @n: Number of bytes of src that should be concatenated with dest
+
+ *
+
+ * Return: Pointer to dest
 
  */
+
+
 
 char *_strncat(char *dest, char *src, int n)
   
 {
   
-  int i, j;
+  int i = 0;
+  
+  int j = 0;
   
 
   
-  i = j = 0;
-  
-  while (*(dest + i))
+  while (dest[i] != '\0')
     
     i++;
   
-  while (j < n && *(src + j))
+
+  
+  while (src[j] != '\0' && n != j)
     
     {
       
-      *(dest + i) = *(src + j);
-      
-      i++;
+      *(dest + i) = src[j];
       
       j++;
       
+      i++;
+      
     }
   
-  if (j < n)
-    
-    *(dest + i) = *(src + j);
+
+  
+  *(dest + i) = '\0';
+  
+
   
   return (dest);
   

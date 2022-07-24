@@ -1,7 +1,5 @@
 #include "main.h"
 
-
-
 /**
 
  * _isdigit - input
