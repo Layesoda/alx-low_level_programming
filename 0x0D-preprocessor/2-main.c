@@ -1,14 +1,15 @@
-#include "main.h"
 #include <stdio.h>
+#define NAME_H
 
 /**
- * main - Prints the name of this file
+ * main - check the code for Holberton School students.
  *
- * Return: Always 1
+ * Return: Always 0.
  */
 int main(void)
 {
-	printf("%s\n", __FILE__);
-
+	#ifdef NAME_H
+		printf("%s\n", __FILE__);
+	#endif
 	return (0);
 }
