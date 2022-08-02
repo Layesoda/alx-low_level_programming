@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h"
 /**
  * _strlen - give the length of a string
@@ -50,3 +51,6 @@ char *_strdup(char *str)
 	copy[i] = '\0';
 	return (copy);
 }
+=======
+
+>>>>>>> 0260e778ae46ae3cf3ddb609bbce5631ee4b8854
